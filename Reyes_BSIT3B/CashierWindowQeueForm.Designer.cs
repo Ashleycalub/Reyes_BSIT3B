@@ -30,7 +30,7 @@
         {
             btnRefresh = new Button();
             btnNext = new Button();
-            listCashierView = new ListView();
+            listCashierQueue = new ListView();
             SuspendLayout();
             // 
             // btnRefresh
@@ -54,21 +54,21 @@
             btnNext.Text = "Next";
             btnNext.UseVisualStyleBackColor = true;
             // 
-            // listCashierView
+            // listCashierQueue
             // 
-            listCashierView.Font = new Font("Times New Roman", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            listCashierView.Location = new Point(109, 12);
-            listCashierView.Name = "listCashierView";
-            listCashierView.Size = new Size(173, 221);
-            listCashierView.TabIndex = 2;
-            listCashierView.UseCompatibleStateImageBehavior = false;
+            listCashierQueue.Font = new Font("Times New Roman", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            listCashierQueue.Location = new Point(109, 12);
+            listCashierQueue.Name = "listCashierQueue";
+            listCashierQueue.Size = new Size(173, 221);
+            listCashierQueue.TabIndex = 2;
+            listCashierQueue.UseCompatibleStateImageBehavior = false;
             // 
             // CashierWindowQueueForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(301, 245);
-            Controls.Add(listCashierView);
+            Controls.Add(listCashierQueue);
             Controls.Add(btnNext);
             Controls.Add(btnRefresh);
             Name = "CashierWindowQueueForm";
@@ -80,6 +80,6 @@
 
         private Button btnRefresh;
         private Button btnNext;
-        public ListView listCashierView;
+        public ListView listCashierQueue;
     }
 }

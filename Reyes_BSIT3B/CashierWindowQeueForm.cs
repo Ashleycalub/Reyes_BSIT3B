@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,11 +19,21 @@ namespace Reyes_BSIT3B
             InitializeComponent();
         }
 
-        
+
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             DisplayCashierQueue(CashierClass.CashierQueue);
+
+            
         }
-        public void DisplayCashierQueue(IEnumerable Ca)
+        public void DisplayCashierQueue(IEnumerable CashierList)
+        {
+            listCashierQueue.Items.Clear();
+            foreach (Object obj in CashierList)
+            {
+                listCashierQueue.Items.Add(obj.ToString());
+            }
+        }
+
     }
 }
