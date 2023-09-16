@@ -23,8 +23,8 @@ namespace Reyes_BSIT3B
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            CashierWindowQueueForm cashierwin = new CashierWindowQueueForm();
-            cashierwin.ShowDialog();
+            CashierWindowQueueForm cashierwindows = new CashierWindowQueueForm();
+            cashierwindows.ShowDialog();
         }
     }
 }
