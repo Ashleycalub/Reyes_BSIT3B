@@ -2,8 +2,7 @@ namespace Reyes_BSIT3B
 {
     public partial class QeueingForm : Form
     {
-        private CashierClass cashier;
-
+        CashierClass cashier = new CashierClass();
         public QeueingForm()
         {
             InitializeComponent();
@@ -16,11 +15,16 @@ namespace Reyes_BSIT3B
 
         private void btnCashier_Click(object sender, EventArgs e)
         {
-            lblQeue.Text = cashier.CashierGeneratedNumber("P - ");
+            lblQeue.Text = cashier.CashierGeneratedNumber("P -");
             CashierClass.getNumberInQueue = lblQeue.Text;
             CashierClass.CashierQueue.Enqueue(CashierClass.getNumberInQueue);
 
         }
 
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            CashierWindowQueueForm cashierwin = new CashierWindowQueueForm();
+            cashierwin.ShowDialog();
+        }
     }
 }
